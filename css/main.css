@@ -10,3 +10,39 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+main {
+  display: grid;
+  grid-template-columns: 30vmin 15vmin 30vmin;
+  grid-template-rows: 10vmin 10vmin 30vmin 10vmin;
+}
+
+main * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+main button {
+  grid-column: span 3;
+  font-size: 20px;
+  margin: 2vmin;
+  color: white;
+  background-color: black
+}
+
+main button:hover {
+  color: black;
+  background-color: white;
+}
+
+#p-result, #c-result {
+  border: 1vmin solid white;
+  border-radius: 4vmin;
+  padding: 2vmin;
+}
+
+#p-result img, #c-result img{
+  width: 100%;
+}
